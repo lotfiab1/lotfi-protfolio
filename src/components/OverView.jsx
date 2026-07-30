@@ -47,7 +47,7 @@ const OverView = ()=>{
                                         <Download size={18} className="text-primary"/>
                                         <div className="download-loader text-white hidden"></div>
                                     </div>
-                                    <a href="/cv.pdf" download="resume.pdf" className="pl-2 text-primary">Download resume</a>
+                                    <a href="./cv.pdf" download="resume.pdf" className="pl-2 text-primary">Download resume</a>
                                 </div>
                             </button>
                         </div>

@@ -27,31 +27,31 @@
       "id":1,
       "name":"python",
       "width":"95%",
-      "icon": "/icons/py.png"
+      "icon": "./icons/py.png"
     },
     {
       "id":2,
       "name":"C / C++",
       "width":"80%",
-      "icon": "/icons/cpp.png"
+      "icon": "./icons/cpp.png"
     },
     {
       "id":3,
       "name":"SQL",
       "width":"75%",
-      "icon": "/icons/sql.png"
+      "icon": "./icons/sql.png"
     },
     {
       "id":4,
       "name":"React.js",
       "width":"70%",
-      "icon": "/icons/react.png"
+      "icon": "./icons/react.png"
     },
     {
       "id":5,
       "name":"HTML & CSS",
       "width":"90%",
-      "icon": "/icons/web.png"
+      "icon": "./icons/web.png"
     }
   ],
   "projects":[
@@ -61,7 +61,7 @@
       "desc": "A machine learning project focused on analyzing and classifying breast cancer data. The dataset contains numerical features describing cell nuclei characteristics, which are used to identify patterns and classify tumors as benign or malignant using different classification algorithms.",
       "tech": ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Joblib"],
       "href":"https://github.com/lotfiab1/Classification-of-Breast-Cancer-Diagnosis",
-      "image" : "/projects-images/classification.webp"
+      "image" : "./projects-images/classification.webp"
     },
     {
       "id":2,
@@ -69,7 +69,7 @@
       "desc": "A handwritten digit recognition system built from scratch in C using the MNIST dataset. The project covers data loading, preprocessing, normalization, neural network training, evaluation, and testing using optimized matrix operations.",
       "tech":["C", "OpenBLAS (CBLAS)"],
       "href":"https://github.com/lotfiab1/Minist-Digits-Recognizer-in-C",
-      "image": "/projects-images/digits.png"
+      "image": "./projects-images/digits.png"
     },
     {
       "id":3,
@@ -77,7 +77,7 @@
       "desc": "A responsive portfolio website designed to showcase my skills, education, projects, and professional journey. Built with modern web technologies to provide a clean and interactive user experience",
       "tech":["React.js", "Tailwind CSS"],
       "href":"https://github.com/lotfiab1/lotfi-protfolio",
-      "image": "/projects-images/protfolio.png"
+      "image": "./projects-images/protfolio.png"
     }
   ]
 
