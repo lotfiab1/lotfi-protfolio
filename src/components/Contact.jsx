@@ -1,7 +1,12 @@
-import React from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
+import React, { useState } from 'react'
+import {FaCheck, FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
+import { MdClose } from "react-icons/md";
 
 const Contact = () => {
+  const [successMessage,setSuccessMessage] = useState(false);
+  const [color, setColor] = useState(["#79F579", "#55EB55"]);
+  const [message,setMessage] = useState("");
+  const [Icon, setIcon] = useState(() => FaCheck);
   const contactData = [
     {
       id:1,
@@ -32,21 +37,59 @@ const Contact = () => {
       link:"https://github.com/lotfiab1"
     }
   ];
+  const renderMessageBox = ()=>{
+    if(!successMessage) return null;
+    const CurrentIcon = Icon;
+    setTimeout(() => {
+        setSuccessMessage(false);
+      }, 5000);
+    return (
 
-  const formSubmission = async function (event){
-    event.preventDefault();
-    const url = "https://formsubmit.co/lotfi.aitbaaya44@gmail.com";
-    const form = document.querySelector("#form");
-    const formData = new FormData(form);
+        <div id="box-message" className={`mb-4 max-w-2/3 p-3 flex m-auto justify-center items-center gap-7 rounded-2xl text-white`} style={{background:color[0]}}>
+          <CurrentIcon size={40} className='p-2 rounded-full ' style={{background:color[1]}}/>
+          <span className='text-lg font-medium'>{message}</span>
+        </div>
+                        
+    );
+  } 
+  const formSubmission = async (event) => {
+      event.preventDefault();
 
-    await fetch(url,{
-      method:"POST",
-      body:formData,
+      const url = "https://formsubmit.co/lotfi.aitbaaya44@gmail.com";
+      const form = document.querySelector("#form");
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          body: formData,
+        });
+
+        if (response.ok) {
+          setSuccessMessage(true);
+          setColor(["#79F579", "#55EB55"]);
+          setIcon(() => FaCheck);
+          setMessage("Message sent successfully!");
+
+          form.reset();
+        } else {
+          setSuccessMessage(true);
+          setColor(["#FF8787", "#FF4F4F"]);
+          setIcon(() => MdClose);
+          setMessage("Failed to send message.");
+        }
+      } catch (error) {
+        setSuccessMessage(true);
+        setColor(["#FF8787", "#FF4F4F"]);
+        setIcon(() => MdClose);
+        setMessage("Network error.");
+      }
+
       
-    });
-    return false;
-  }
+    };
 
+
+  
   return (
     <section id='contact' className='py-20 bg-gray-900'>
         <div className="container mx-auto px-4 max-w-6xl">
@@ -91,6 +134,12 @@ const Contact = () => {
             </div>
             <div className="bg-gray-800 rounded-lg p-6">
               <form id='form' onSubmit={formSubmission}>
+                
+                  {renderMessageBox()}
+
+
+                
+               
                 <div className="mb-4">
                   <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Email</label>
                   <input type="email" name='email'  className='w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:outline-none focus:border-primary transition-colors' placeholder='your@example.com' />

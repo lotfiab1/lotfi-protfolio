@@ -13,7 +13,7 @@ const OverView = ()=>{
 
                 </div>
             </div>
-            <div className="w-full px-5 sm:px-8 md:px-12 lg:px-8  max-w-5xl lg:max-w-7xl mx-auto relative">
+            <div className="w-full px-5 sm:px-8 md:px-10 lg:px-20  max-w-5xl lg:max-w-7xl mx-auto relative">
                 <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                     <div className="lg:py-6">
                         <div className="text-center lg:text-left">
@@ -31,7 +31,7 @@ const OverView = ()=>{
                             Welcome to my portfolio, where you will find a collection of my data analytics and machine learning projects, showcasing my technical skills, problem-solving approach, and passion for building data-driven solutions.
 
                         </p>
-                        <div className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max lg:mx-0">
+                        <div className="flex items-center gap-3 pt-9 flex-col md:flex-row md:m-auto sm:flex-row sm:w-max sm:m-auto lg:mx-0">
                             <button 
                             className="px-6 md:px-7 py-3 rounded-full hover:cursor-pointer relative group w-full sm:w-max flex justify-center"
                             onClick={()=>document.querySelector("contact")?.scrollIntoView({behavior:'smooth'})}

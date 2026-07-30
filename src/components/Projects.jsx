@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { ChevronRight, ArrowRight } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = ({projectsData}) => {
 
@@ -33,10 +34,10 @@ const Projects = ({projectsData}) => {
                     </div>
 
                     <div className="mt-auto flex justify-end pt-4">
-                      <div className='flex ml-auto gap-1'>
-                        <span className='text-gray-400 invisible group-hover:visible'>Go To Github</span>
-                        <a href={project.href} target='_blank' className="invisible group-hover:visible bg-[#111a3e] text-white hover:bg-gray-400 inline-block rounded-full" title='rrrrr'>
-                          <ChevronRight size={30}/>
+                      <div className='flex ml-auto items-center gap-1  lg:invisible group-hover:visible'>
+                        <span className='text-gray-400'>Go To Github</span>
+                        <a href={project.href} target='_blank' className="bg-[#111a3e] text-white  hover:scale-105 duration-300 inline-block rounded-full" title='rrrrr'>
+                          <FaGithub size={28}/>
                         </a>
                       </div>
                     </div>
