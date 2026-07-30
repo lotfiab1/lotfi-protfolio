@@ -55,7 +55,7 @@ const Contact = () => {
   const formSubmission = async (event) => {
       event.preventDefault();
 
-      const url = "https://formsubmit.co/lotfi.aitbaaya44@gmail.com";
+      const url = "https://formsubmit.co/95dbf005d800d6d8ab20ab03b2c4d5a0";
       const form = document.querySelector("#form");
       const formData = new FormData(form);
 
