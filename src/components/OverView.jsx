@@ -38,7 +38,7 @@ const OverView = ()=>{
                             >
                                 <span className="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent"></span>
                                 <span className="relative flex items-center justify-center text-white">
-                                    contact me
+                                    <a href="#contact">contact me</a>
                                 </span>
                             </button>
                             <button className="border border-cyan-400 px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
