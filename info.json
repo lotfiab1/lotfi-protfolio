@@ -27,31 +27,31 @@
       "id": 1,
       "name": "python",
       "width": "95%",
-      "icon": "/icons/py.png"
+      "icon": "./icons/py.png"
     },
     {
       "id": 2,
       "name": "C / C++",
       "width": "80%",
-      "icon": "/icons/cpp.png"
+      "icon": "./icons/cpp.png"
     },
     {
       "id": 3,
       "name": "SQL",
       "width": "75%",
-      "icon": "/icons/sql.png"
+      "icon": "./icons/sql.png"
     },
     {
       "id": 4,
       "name": "React.js",
       "width": "70%",
-      "icon": "/icons/react.png"
+      "icon": "./icons/react.png"
     },
     {
       "id": 5,
       "name": "HTML & CSS",
       "width": "90%",
-      "icon": "/icons/web.png"
+      "icon": "./icons/web.png"
     }
   ],
   "projects_info": {
