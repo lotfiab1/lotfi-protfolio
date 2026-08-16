@@ -64,7 +64,7 @@ const Projects = ({ filter_list, projectsData }) => {
             projectsData.map((project) => (
               (project.cat == default_idx || default_idx == 0) && (
                 <div key={project.id} className="group flex flex-col h-full bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
-                  <img src={window.location.pathname + '/' + project.image} alt={project.title} className="w-full h-45 object-cover group-hover:opacity-90 transition-opacity duration-300" />
+                  <img src={`${import.meta.env.BASE_URL}${project.image}`} alt={project.title} className="w-full h-45 object-cover group-hover:opacity-90 transition-opacity duration-300" />
 
                   <div className="relative p-4 flex flex-col flex-1">
                     <h3 className="text-lg font-semibold text-white group-hover:text-primary">

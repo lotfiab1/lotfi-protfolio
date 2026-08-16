@@ -47,7 +47,7 @@ const OverView = () => {
                                         <Download size={18} className="text-primary" />
                                         <div className="download-loader text-white hidden"></div>
                                     </div>
-                                    <a href={`${window.location.pathname}/cv.pdf`} download="resume.pdf" className="pl-2 text-primary">Download resume</a>
+                                    <a href={`${import.meta.env.BASE_URL}cv.pdf`} download="resume.pdf" className="pl-2 text-primary">Download resume</a>
                                 </div>
                             </button>
                         </div>

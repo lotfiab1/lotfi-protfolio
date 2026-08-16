@@ -5,4 +5,4 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss()],
-  base:"/lotfi-protfolio",})
+  base: process.env.VERCEL ? "/" : "/lotfi-protfoli/",})

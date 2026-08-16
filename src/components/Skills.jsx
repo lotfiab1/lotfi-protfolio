@@ -16,7 +16,7 @@ const Skills = ({ skillsData }) => {
                       <div className="flex items-center justify-between mb-2">
                         <div className="flex items-center gap-3">
                           <div className="p-2 bg-[#111a3e] rounded-lg group-hover:bg-primary transition-colors duration-300 ">
-                            <img src={window.location.pathname + '/' + skill.icon} width={48} height={48} alt={skill.name} className="w-12 h-12 object-contain" />
+                            <img src={`${import.meta.env.BASE_URL}${skill.icon}`} width={48} height={48} alt={skill.name} className="w-12 h-12 object-contain" />
                           </div>
                           <span className="font-medium tracking-wide">{skill.name}</span>
 

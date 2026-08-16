@@ -23,7 +23,7 @@ const App = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          document.location.pathname + "/info.json"
+          `${import.meta.env.BASE_URL}info.json`
         );
 
         if (!response.ok) {
