@@ -26,3 +26,6 @@
     --tw-gradient-via : var(--primary);
   }
 }
+html{
+  font-family: 'Poppins',sans-serif;
+}

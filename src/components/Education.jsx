@@ -26,7 +26,7 @@ const Education = ({educationData}) => {
                 <div className="absolute -top-4 -left-4 bg-primary/20 w-16 h-16 rounded-full blur-2xl"></div>
               </div>
             </div>
-            <div className='w-full lg:w-7/12 space-y-6' data-aos="fade-left">
+            <div className='w-full lg:w-9/12 space-y-6' data-aos="fade-left">
                 {
                     educationData.map((educ) =>(
                       <div key={educ.id} className='group relative p-6 rounded-2xl bg-[#111a3e] border border-[#1f1641] transition-all duration-300 hover:border-primary/50 '>
@@ -36,17 +36,17 @@ const Education = ({educationData}) => {
                                   <GraduationCap className='text-primary ' size={24}/>
                               </div>
                               <div>
-                                  <h3 className='text-lg font-bold text-white group-hover:text-primary transition-colors'>
+                                  <h3 className='text-[16px] font-bold text-white group-hover:text-primary transition-colors'>
                                   {educ.degree}
                                   </h3>
-                                  <p className="text-gray-400 text-sm">
+                                  <p className="text-gray-400 text-sm ">
                                   {educ.institution} - {educ.location}
                                   </p>
                               </div>
                             </div>
-                            <div className="flex items-center gap-2 text-xs font-medium bg-[#050816] px-3 py-1 rounded-full border border-gray-700 w-fit ">
+                            <div className="flex items-center gap-2 bg-[#050816] px-2 py-2 rounded-full border border-gray-700 w-fit">
                                 <Calendar size={12} className='text-primary'/>
-                                {educ.duration}
+                                <span className='inline text-[12px] font-normal'>{educ.duration}</span>
                             </div>
                           </div>
                       </div>
