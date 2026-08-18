@@ -112,7 +112,5 @@ The goal of this project is to create a professional online presence while demon
 
 ## 📄 License
 
-This project is open source and available for educational and personal use.
+This project is open source and available for educational and personal use. [LICENSE](https://github.com/lotfiab1/lotfi-protfolio/blob/master/LICENSE)
 
-```
-```
