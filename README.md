@@ -1,16 +1,45 @@
-# React + Vite
+# Responsive Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive personal portfolio website built to showcase my projects, technical skills, education, and professional experience.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **[View Portfolio](https://lotfi-protfolio.vercel.app/)**
 
-## React Compiler
+## 📌 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is my personal developer portfolio, designed to provide an overview of my background and showcase my work in **Data Analysis, Artificial Intelligence, Machine Learning, and Web Development**.
 
-## Expanding the Oxlint configuration
+The website is fully responsive and optimized for different screen sizes, including desktop, tablet, and mobile devices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Features
+
+- 📱 Fully responsive design
+- 🎨 Modern and clean user interface
+- 💼 Projects showcase
+- 🛠️ Technical skills section
+- 🎓 Education section
+- 📜 Certifications section
+- 📄 CV access
+- 📬 Contact information
+- 🔗 Links to GitHub and LinkedIn
+- ⚡ Fast and lightweight frontend
+
+## 🛠️ Technologies
+
+- **React.js**
+- **JavaScript**
+- **Tailwind CSS**
+- **HTML5**
+- **CSS3**
+- **Vite**
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+├── assets/
+├── data/
+├── App.jsx
+└── main.jsx
