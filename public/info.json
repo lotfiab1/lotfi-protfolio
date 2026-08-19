@@ -22,6 +22,22 @@
       "location": "Oulad berhil, Morocco"
     }
   ],
+  "certifications":[
+    {
+      "id": 1,
+      "name": "Data Science Essentials With Python",
+      "year": "2026",
+      "issuer": "Cisco",
+      "link": "https://www.credly.com/badges/16a7c9a8-af0f-4a0b-958e-86f9d5f2f3b3"
+    },
+    {
+      "id": 2,
+      "name": "Python Essentials 2",
+      "year": "2026",
+      "issuer": "Cisco",
+      "link": "https://www.credly.com/badges/7fa90333-37bf-42d4-b3cb-9be2bc569e9d"
+    }
+  ],
   "skills": [
     {
       "id": 1,
@@ -52,13 +68,20 @@
       "name": "HTML & CSS",
       "width": "90%",
       "icon": "./icons/web.png"
+    },
+    {
+      "id": 6,
+      "name": "Git & Github",
+      "width": "90%",
+      "icon": "./icons/git.png"
     }
   ],
   "projects_info": {
     "filter-list": [
       "All Projects",
-      "AI & DATA ANALYST",
-      "WEB DEVELOPEMENT"
+      "Machine Learning",
+      "WEB DEVELOPEMENT",
+      "Data Analyst & AI"
     ],
     "projects": [
       {
@@ -113,6 +136,20 @@
         ],
         "href": "https://github.com/lotfiab1/VOID-Challenge",
         "image": "./projects-images/challenge.png"
+      },
+      {
+        "id": 5,
+        "title": "Data Analyst Projects",
+        "cat": 3,
+        "desc": "containing a collection of data analysis projects developed using Python, Jupyter Notebook, and various data analysis and visualization tools.",
+        "tech": [
+          "Pandas",
+          "Matplotlib",
+          "Scikit-learn",
+          "Seaborn"
+        ],
+        "href": "https://github.com/lotfiab1/Data-Analyst-Projects",
+        "image": "./projects-images/Data_Analyst_Projects.jpg"
       }
     ]
   }

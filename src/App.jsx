@@ -10,6 +10,7 @@ import Skills from "./components/Skills";
 import Projects from './components/Projects';
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Certifications from "./components/Certification";
 const App = () => {
   const [jsonData, setJsonData] = useState(null);
 
@@ -57,7 +58,7 @@ const App = () => {
       <About />
 
       <Education educationData={jsonData.education} />
-
+      <Certifications certificationsData={jsonData.certifications}/>
       <Skills skillsData={jsonData.skills} />
 
       <Projects filter_list={jsonData.projects_info["filter-list"]} projectsData={jsonData.projects_info["projects"]} />

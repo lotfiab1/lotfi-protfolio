@@ -30,13 +30,13 @@ const Education = ({educationData}) => {
                 {
                     educationData.map((educ) =>(
                       <div key={educ.id} className='group relative p-6 rounded-2xl bg-[#111a3e] border border-[#1f1641] transition-all duration-300 hover:border-primary/50 '>
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-                            <div className="flex items-center gap-3">
+                          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
+                            <div className="flex items-center flex-col sm:flex-row gap-7 md:gap-10">
                               <div className="p-2 bg-[#050816] rounded-lg border border-primary/20 group-hover:border-primary transition-colors ">
                                   <GraduationCap className='text-primary ' size={24}/>
                               </div>
-                              <div>
-                                  <h3 className='text-[16px] font-bold text-white group-hover:text-primary transition-colors'>
+                              <div className='max-w-xs sm:max-w-[70%] text-center sm:text-start flex flex-col gap-3 '>
+                                  <h3 className='text-sm sm:text-lg font-bold text-white group-hover:text-primary transition-colors'>
                                   {educ.degree}
                                   </h3>
                                   <p className="text-gray-400 text-sm ">
@@ -44,7 +44,7 @@ const Education = ({educationData}) => {
                                   </p>
                               </div>
                             </div>
-                            <div className="flex items-center gap-2 bg-[#050816] px-2 py-2 rounded-full border border-gray-700 w-fit">
+                            <div className="flex items-center min-w-[25%] justify-center gap-2 bg-[#050816] px-2 py-2 rounded-full border border-gray-700 w-fit">
                                 <Calendar size={12} className='text-primary'/>
                                 <span className='inline text-[12px] font-normal'>{educ.duration}</span>
                             </div>

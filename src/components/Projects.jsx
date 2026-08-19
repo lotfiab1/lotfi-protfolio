@@ -83,9 +83,8 @@ const Projects = ({ filter_list, projectsData }) => {
 
                     <div className="mt-auto flex justify-end pt-4">
                       <div className='flex ml-auto items-center gap-1  lg:invisible group-hover:visible'>
-                        <span className='text-gray-400'>Go To Github</span>
-                        <a href={project.href} target='_blank' className="bg-[#111a3e] text-white  hover:scale-105 duration-300 inline-block rounded-full" title='rrrrr'>
-                          <FaGithub size={28} />
+                        <a href={project.href} target='_blank' className="bg-[#111a3e] text-white  hover:scale-105 duration-300 inline-block rounded-full" title='Github'>
+                          <FaGithub size={30} />
                         </a>
                       </div>
                     </div>
