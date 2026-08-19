@@ -1,10 +1,29 @@
 import { Download } from "lucide-react";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import me from "../assets/me.jpeg";
 
 const OverView = () => {
+    const [isClick,setIsClick] = useState(false);
+    const ClickDownRef = useRef(false);
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (ClickDownRef.current && !ClickDownRef.current.contains(event.target)) {
+            setIsClick(false);
+          }
+        };
+    
+        if (isClick) {
+          document.addEventListener('mousedown', handleClickOutside);
+        }
+    
+        return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+        };
+      }, [isClick]);
+
     return (
         <section className="relative w-full" data-aos="zoom-in-up" id="home">
+     
             <div className="absolute top-0 inset-x-0 h-64 flex items-start">
                 <div className="h-24 w-2/3 bg-linear-to-br from-[#0c7fac] blur-2xl invisible opacity-40">
 
@@ -31,9 +50,9 @@ const OverView = () => {
                             Welcome to my portfolio, where you will find a collection of my data analytics and machine learning projects, showcasing my technical skills, problem-solving approach, and passion for building data-driven solutions.
 
                         </p>
-                        <div className="flex items-center gap-3 pt-9 flex-col md:flex-row md:m-auto sm:flex-row sm:w-max sm:m-auto lg:mx-0">
+                        <div className="relative flex items-center gap-3 pt-9 flex-col lg:flex-row  sm:w-max sm:m-auto lg:mx-0">
                             <button
-                                className="px-6 md:px-7 py-3 rounded-full hover:cursor-pointer relative group w-full sm:w-max flex justify-center"
+                                className="px-6 md:px-7 py-3 rounded-full hover:cursor-pointer relative group w-full md:w-full  flex justify-center"
                                 onClick={() => document.querySelector("contact")?.scrollIntoView({ behavior: 'smooth' })}
                             >
                                 <span className="absolute inset-0 rounded-3xl group-hover:scale-105 origin-center transition-all ease-in-out bg-primary border-2 border-transparent"></span>
@@ -41,15 +60,36 @@ const OverView = () => {
                                     <a href="#contact">contact me</a>
                                 </span>
                             </button>
-                            <button className="border border-cyan-400 px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
+                            <button onClick={()=>setIsClick(!isClick)} className=" border border-cyan-400 px-6 md:px-7 py-3 rounded-full relative group w-full md:max-w flex justify-center">
                                 <div className="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
                                     <div className="svg-container">
                                         <Download size={18} className="text-primary" />
-                                        <div className="download-loader text-white hidden"></div>
                                     </div>
-                                    <a href={`${import.meta.env.BASE_URL}cv.pdf`} download="resume.pdf" className="pl-2 text-primary">Download resume</a>
+                                    <span className="pl-2 text-primary">Download resume</span>
                                 </div>
                             </button>
+                            <div className="relative z-50 mb-35 flex w-full justify-center items-baseline m-0 p-0 lg:w-fit">
+                                <div className="relative"></div>
+                                    {
+                                        
+                                        isClick &&
+                                        (
+                                            <div ref={ClickDownRef} className="absolute w-80 top-5  lg:left-0 z-50 flex gap-0 items-center flex-col lg:flex-row" data-aos="zoom-in-down sm:zoom-in-right">
+                                                <div className=" border-t-10 border-t-transparent border-r-20 border-r-[#232d42] border-b-10 border-b-transparent rotate-90 lg:rotate-0"></div>
+                                                <div className="flex flex-col gap-0 rounded-lg bg-[#111827] shadow-lg shadow-[#232d42] border border-white" >
+                                                        <button  className="group px-6 py-4 pb-1.5  rounded-t-lg ">
+                                                                <a onClick={()=>{setIsClick(false);}} href={`${import.meta.env.BASE_URL}web_dev_en.pdf`} download={"web_dev.pdf"} className="pl-2 text-primary group-hover:text-white">Web Dev Resume</a>
+                                                        </button>
+                                                        <button className="group px-6 py-4 pt-1.5 rounded-b-lg"> 
+                                                                <a onClick={()=>{setIsClick(false);}} href={`${import.meta.env.BASE_URL}data_analyst_en.pdf`} download={"data_analyst.pdf"} className="pl-2 text-primary group-hover:text-white">Data Analyst Resume</a>
+                                                        </button>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
+                                
+                            </div>
+                            
                         </div>
                     </div>
                     <div className="lg:h-full md:flex">
