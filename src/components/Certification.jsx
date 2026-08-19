@@ -33,7 +33,7 @@ const Certifications = function ({certificationsData}){
                                                     {certification.year} - {certification.issuer}
                                                     </p>
                                                 </div>
-                                                <a href={certification.link} className="sm:ml-auto self-center p-0 min-w-25 flex justify-center items-center gap-2 bg-[#050816] px-2 py-2 rounded-full border border-gray-700 w-fit hover:bg-[#4b4d53]">
+                                                <a target="_blank" href={certification.link} className="sm:ml-auto self-center p-0 min-w-25 flex justify-center items-center gap-2 bg-[#050816] px-2 py-2 rounded-full border border-gray-700 w-fit hover:bg-[#4b4d53]">
                                                         <span className="text-primary text-xs sm:text-sm">View Badge</span>
                                                 </a>
 

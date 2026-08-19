@@ -120,7 +120,7 @@ const Contact = () => {
                         {
                           info.link ?
                             (
-                              <a href={info.link} className='text-gray-400 text-sm hover:text-primary transition-colors' target='_blank' rel='noopener noreferrer'>{info.value}</a>
+                              <a href={info.link} target='_blank' className='text-gray-400 text-sm hover:text-primary transition-colors' target='_blank' rel='noopener noreferrer'>{info.value}</a>
                             ) : (
                               <p className='text-gray-400 text-sm'>{info.value}</p>
                             )
