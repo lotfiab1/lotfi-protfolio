@@ -1,5 +1,3 @@
-Here’s a professional `README.md` you can use for your **Responsive Portfolio** repository:
-
 # Responsive Portfolio
 
 A modern and responsive personal portfolio website built to showcase my projects, technical skills, education, and professional experience.
