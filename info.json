@@ -150,6 +150,20 @@
         ],
         "href": "https://github.com/lotfiab1/Data-Analyst-Projects",
         "image": "./projects-images/Data_Analyst_Projects.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Hand Gesture Classifier Mouse Control",
+        "cat": 1,
+        "desc": "Control your mouse cursor and clicks using nothing but your webcam and hand gestures. The project tracks your hand in real time with MediaPipe, classifies the gesture with a scikit-learn model, and drives the system cursor with PyAutoGUI.",
+        "tech": [
+          "Pandas",
+          "Numpy",
+          "Scikit-learn",
+          "Joblib"
+        ],
+        "href": "https://github.com/lotfiab1/Hand-Gesture-Classifier-Mouse-Control",
+        "image": "./projects-images/Hand_Gesture.jpg"
       }
     ]
   }
