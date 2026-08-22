@@ -1,5 +1,3 @@
-Here’s a professional `README.md` you can use for your **Responsive Portfolio** repository:
-
 # Responsive Portfolio
 
 A modern and responsive personal portfolio website built to showcase my projects, technical skills, education, and professional experience.
@@ -109,7 +107,8 @@ The goal of this project is to create a professional online presence while demon
 * 💼 LinkedIn: [linkedin.com/in/lotfiab1](https://www.linkedin.com/in/lotfiab1)
 * 🐙 GitHub: [github.com/lotfiab1](https://github.com/lotfiab1)
 
-## 📄 License
+# 📜 License
 
-This project is open source and available for educational and personal use. [LICENSE](https://github.com/lotfiab1/lotfi-protfolio/blob/master/LICENSE)
+This repository is available under the **MIT License**.
 
+See the [LICENSE](./LICENSE) file for details.
