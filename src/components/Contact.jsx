@@ -141,12 +141,30 @@ const Contact = () => {
 
 
               <div className="mb-4">
-                <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Email</label>
-                <input type="email" name='email' className='w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:outline-none focus:border-primary transition-colors' placeholder='your@example.com' />
+                <label htmlFor="email-field" className="text-white block mb-2 text-sm font-medium">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email-field"
+                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:outline-none focus:border-primary transition-colors"
+                  placeholder="your@example.com"
+                  autoComplete="email"
+                />
               </div>
+
               <div className="mb-6">
-                <label htmlFor="message" className='text-white block mb-2 text-sm font-medium'>Message</label>
-                <textarea name='message' className='w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:outline-none focus:border-primary transition-colors' rows={4} placeholder='Your Message ...' ></textarea>
+                <label htmlFor="message-field" className="text-white block mb-2 text-sm font-medium">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  id="message-field"
+                  className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:outline-none focus:border-primary transition-colors"
+                  rows={4}
+                  placeholder="Your Message ..."
+                ></textarea>
               </div>
               <input type="hidden" name="_captcha" value="false"></input>
               <button type="submit" className='w-full px-6 py-2.5 bg-primary text-white rounded-lg font-medium hover:bg-primary/80 hover:cursor-pointer'>Send Message</button>

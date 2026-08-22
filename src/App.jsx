@@ -32,8 +32,6 @@ const App = () => {
         }
 
         const data = await response.json();
-
-        console.log(data);
         setJsonData(data);
       } catch (error) {
         console.error("Error loading info.json:", error);
