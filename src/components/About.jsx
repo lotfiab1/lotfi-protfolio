@@ -12,34 +12,34 @@ const About = () => {
           </h2>
           <h2 className="text-4xl text-white uppercase border-b-4 border-[#f1f1f1] max-w-2/3 pb-3 mb-6">lotfi ait baaya</h2>
           <p className="text-gray-400 text-base lg:text-lg mb-10 leading-relaxed">
-            I'm a Data Analyst and AI Developer from Morocco with a Bachelor's degree in Data Analysis and Artificial Intelligence.
+            I'm a <strong>Data Analyst and AI/ML Developer from Morocco</strong> with a Bachelor's degree in <strong>Data Analysis and Artificial Intelligence</strong>.
 
             <br /><br />
 
-            I'm passionate about transforming data into actionable insights and developing intelligent solutions that solve real-world problems. I enjoy exploring datasets, building machine learning models, automating workflows, and creating software that makes data more accessible and useful.
+            I'm passionate about turning data into actionable insights and building intelligent solutions that solve real-world problems. I enjoy analyzing complex datasets, developing machine learning models, automating workflows, and creating software that makes data more accessible and useful.
 
             <br /><br />
 
-            My technical background includes Python, SQL, JavaScript, Java, C/C++, HTML/CSS, and data analysis libraries such as Pandas, NumPy, Matplotlib, Scikit-learn, and PyTorch. I also have experience in web scraping, data visualization, and developing web applications.
+            My technical background includes <strong>Python, SQL, JavaScript, Java, C/C++, HTML/CSS</strong>, as well as tools and libraries such as <strong>Pandas, NumPy, Matplotlib, Scikit-learn, and PyTorch</strong>. I also have experience in <strong>data visualization, web scraping, machine learning, and web development</strong>.
 
             <br /><br />
 
-            Through academic and personal projects, I've applied data analysis and machine learning techniques to solve practical challenges, from predictive modeling and data visualization to automation and software development. These experiences have strengthened my analytical thinking, programming skills, and ability to turn complex problems into effective solutions.
+            Through academic and personal projects, I've worked on practical applications involving <strong>data analysis, predictive modeling, machine learning, automation, and software development</strong>. These projects have strengthened my analytical thinking, problem-solving abilities, and programming skills.
 
             <br /><br />
 
-            I enjoy learning new technologies, improving my skills, and taking on challenging projects that push me to grow both professionally and personally. I'm currently looking for opportunities where I can contribute, collaborate with talented teams, and continue building impactful data-driven and AI-powered solutions.
+            I'm continuously learning and exploring new technologies, with the goal of building <strong>reliable, data-driven, and AI-powered solutions</strong>. I'm open to opportunities where I can contribute to meaningful projects, collaborate with talented teams, and continue growing as a <strong>Data Analyst and AI Developer</strong>.
           </p>
 
           <div className="grid grid-cols-2 gap-6 max-w-xl">
             <div className="text-center rounded-2xl bg-[#111a3e] border border-[#1f1641] p-5 transition-all duration-300 hover:border-primary/50">
-              <h3 className="text-primary font-bold text-2xl md:text-3xl">+15</h3>
+              <h3 className="text-primary font-bold text-2xl md:text-3xl">+20</h3>
               <p className="text-xs text-gray-400 uppercase tracking-wider mt-0.5">
                 Projects
               </p>
             </div>
             <div className="text-center rounded-2xl bg-[#111a3e] border border-[#1f1641] p-5 transition-all duration-300 hover:border-primary/50">
-              <h3 className="text-primary font-bold text-2xl md:text-3xl">+2</h3>
+              <h3 className="text-primary font-bold text-2xl md:text-3xl">+3</h3>
               <p className="text-xs text-gray-400 uppercase tracking-wider mt-0.5">
                 Years
               </p>
