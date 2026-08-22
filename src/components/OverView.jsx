@@ -60,7 +60,7 @@ const OverView = () => {
                                     <a href="#contact">contact me</a>
                                 </span>
                             </button>
-                            <button onClick={()=>setIsClick(!isClick)} className=" border border-cyan-400 px-6 md:px-7 py-3 rounded-full relative group w-full md:max-w flex justify-center">
+                            <button onClick={()=>setIsClick(!isClick)} className=" border border-cyan-400 px-6 md:px-7 py-3 rounded-full relative group w-full lg:min-w-fit flex justify-center">
                                 <div className="hover:scale-105 transition-all ease-in-out flex justify-center items-center relative">
                                     <div className="svg-container">
                                         <Download size={18} className="text-primary" />
@@ -81,7 +81,7 @@ const OverView = () => {
                                                                 <a onClick={()=>{setIsClick(false);}} href={`${import.meta.env.BASE_URL}web_dev_en.pdf`} download={"web_dev.pdf"} className="pl-2 text-primary group-hover:text-white">Web Dev Resume</a>
                                                         </button>
                                                         <button className="group px-6 py-4 pt-1.5 rounded-b-lg"> 
-                                                                <a onClick={()=>{setIsClick(false);}} href={`${import.meta.env.BASE_URL}data_analyst_en.pdf`} download={"data_analyst.pdf"} className="pl-2 text-primary group-hover:text-white">Data Analyst Resume</a>
+                                                                <a onClick={()=>{setIsClick(false);}} href={`${import.meta.env.BASE_URL}Resume_ML-AI.pdf`} download={"Ai-ML_Deveoper.pdf"} className="pl-2 text-primary group-hover:text-white">AI/ML Resume</a>
                                                         </button>
                                                 </div>
                                             </div>
