@@ -48,8 +48,8 @@ const Projects = ({ filter_list, projectsData }) => {
 
                   {
                     filter_list.map((elm, idx) => (
-                      <div onClick={() => { setDropDown(false); setDefaultIdx(idx); }} className='group text-center w-full block cursor-default py-2 text-gray-900 select-none hover:bg-indigo-600 focus:outline-hidden '>
-                        <span className='text-sm text-black'>{elm}</span>
+                      <div onClick={() => { setDropDown(false); setDefaultIdx(idx); }} className='group text-center w-full block cursor-default py-2 select-none hover:bg-indigo-600 focus:text-white focus:outline-hidden dark:focus:bg-indigo-500'>
+                        <span className='text-sm text-gray-900'>{elm}</span>
                       </div>
                     ))
                   }
