@@ -164,7 +164,22 @@
         ],
         "href": "https://github.com/lotfiab1/Hand-Gesture-Classifier-Mouse-Control",
         "image": "./projects-images/Hand_Gesture.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Self-Driving Car — Neural Lane-Change Simulation",
+        "cat": 1,
+        "desc": "A browser-based traffic simulation built with React and HTML5 Canvas, in which a small feedforward neural network observes lane occupancy and decides in real time whether to stay, move left, or move right.",
+        "tech": [
+          "React",
+          "HTML5",
+          "Tailwind CSS",
+          "Vanilla JavaScript"
+        ],
+        "href": "https://github.com/lotfiab1/Self-Driving-Car",
+        "image": "./projects-images/self-driving-car.png"
       }
+
     ]
   }
 }
