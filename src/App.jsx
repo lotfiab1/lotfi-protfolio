@@ -21,25 +21,36 @@ const App = () => {
       offset: 100,
     });
 
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `${import.meta.env.BASE_URL}info.json`
-        );
 
-        if (!response.ok) {
-          throw new Error(`HTTP error: ${response.status}`);
-        }
-
-        const data = await response.json();
-        setJsonData(data);
-      } catch (error) {
-        console.error("Error loading info.json:", error);
-      }
-    };
-
-    fetchData();
   }, []);
+
+  useEffect(
+    () => {
+
+      const fetchData = async () => {
+        try {
+          const response = await fetch(
+            `${import.meta.env.BASE_URL}info.json`
+          );
+
+          if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+          }
+
+          const data = await response.json();
+          setJsonData(data);
+        } catch (error) {
+          console.error("Error loading info.json:", error);
+        }
+      };
+
+      (
+        async () => {
+          await fetchData();
+        }
+      )();
+
+    }, [])
 
   if (!jsonData) {
     return (
@@ -56,7 +67,7 @@ const App = () => {
       <About />
 
       <Education educationData={jsonData.education} />
-      <Certifications certificationsData={jsonData.certifications}/>
+      <Certifications certificationsData={jsonData.certifications} />
       <Skills skillsData={jsonData.skills} />
 
       <Projects filter_list={jsonData.projects_info["filter-list"]} projectsData={jsonData.projects_info["projects"]} />
