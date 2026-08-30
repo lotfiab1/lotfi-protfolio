@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import NavBar from "./components/NavBar";
 import OverView from "./components/OverView";
@@ -74,6 +75,7 @@ const App = () => {
 
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 };
